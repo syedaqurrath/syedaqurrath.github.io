@@ -2035,7 +2035,7 @@ section:first-of-type,
 .form-group {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 12px;
   margin-bottom: 18px;
 }
 
@@ -2043,19 +2043,22 @@ section:first-of-type,
   color: #D4AF37;
   font-weight: 600;
   font-size: 0.95rem;
+  margin-bottom: 12px;
 }
 
 .form-group input,
 .form-group textarea {
   width: 100%;
   padding: 16px;
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,215,0,0.2);
+  background: transparent;
   color: #ffffff;
   font-size: 1rem;
-  border-radius: 12px;
+  border: none;
+  border-bottom: 2px solid rgba(255,255,255,0.06);
+  border-radius: 8px;
   outline: none;
-  transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.12s ease;
+  transition: box-shadow 0.18s ease, border-color 0.18s ease, transform 0.12s ease;
+  text-align: left;
 }
 
 .form-group input::placeholder,
@@ -2066,12 +2069,13 @@ section:first-of-type,
 .form-group textarea {
   min-height: 180px;
   resize: vertical;
+  vertical-align: top;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: #D4AF37;
-  box-shadow: 0 0 20px rgba(212,175,55,0.25);
+  border-bottom-color: #D4AF37;
+  box-shadow: 0 0 20px rgba(212,175,55,0.18);
 }
 
 .contact-submit {
