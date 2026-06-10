@@ -2021,179 +2021,79 @@ section:first-of-type,
 
 /* Form */
 .contact-form {
-  background: rgba(255,255,255,0.02);
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 16px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
   padding: 40px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-.contact-form {
-  background: rgba(255,255,255,0.02);
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 14px;
-  padding: 24px;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  max-width: 720px;
 }
 
 .form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-bottom: 18px;
-}
-
-.form-label {
-  color: #D4AF37;
-  font-weight: 600;
-  font-size: 0.95rem;
-  margin-bottom: 12px;
-}
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin-bottom: 12px;
-}
-
-.form-label {
-  color: #D4AF37;
-  font-weight: 600;
-  font-size: 0.92rem;
-  margin-bottom: 12px;
+  position: relative;
+  margin-bottom: 32px;
 }
 
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 16px;
+  padding: 14px 0;
   background: transparent;
-  color: #ffffff;
+  border: none;
+  border-bottom: 2px solid var(--navy-medium);
+  color: var(--text-primary);
   font-size: 1rem;
-  border: none;
-  border-bottom: 2px solid rgba(255,255,255,0.06);
-  border-radius: 8px;
   outline: none;
-  transition: box-shadow 0.18s ease, border-color 0.18s ease, transform 0.12s ease;
-  text-align: left;
-}
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 12px 14px;
-  background: transparent;
-  color: #ffffff;
-  font-size: 0.98rem;
-  border: none;
-  border-bottom: 2px solid rgba(255,255,255,0.06);
-  border-radius: 6px;
-  outline: none;
-  transition: box-shadow 0.18s ease, border-color 0.18s ease, transform 0.12s ease;
-  text-align: left;
-}
-
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-  color: rgba(255,255,255,0.5);
+  transition: border-color var(--transition-fast);
 }
 
 .form-group textarea {
-  min-height: 180px;
   resize: vertical;
-  vertical-align: top;
-}
-.form-group textarea {
-  min-height: 160px;
-  resize: vertical;
-  vertical-align: top;
+  min-height: 120px;
 }
 
-.contact-submit {
-  padding: 14px 32px;
-  border-radius: 12px;
-  background: linear-gradient(135deg,#D4AF37,#e8c84a);
-  color: #000000;
-  font-weight: 700;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
+.form-group label {
+  position: absolute;
+  left: 0;
+  top: 14px;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  transition: all var(--transition-fast);
+  pointer-events: none;
 }
-.contact-submit:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(212,175,55,0.18), 0 0 30px rgba(212,175,55,0.12);
-}
-.contact-submit {
-  padding: 12px 28px;
-  border-radius: 10px;
-  background: linear-gradient(135deg,#D4AF37,#e8c84a);
-  color: #000000;
-  font-weight: 700;
-  border: none;
-  cursor: pointer;
-  font-size: 0.96rem;
-  transition: transform 0.16s ease, box-shadow 0.16s ease;
-}
-.contact-submit:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 24px rgba(212,175,55,0.16), 0 0 26px rgba(212,175,55,0.1);
+
+.form-group input:focus ~ label,
+.form-group input:not(:placeholder-shown) ~ label,
+.form-group textarea:focus ~ label,
+.form-group textarea:not(:placeholder-shown) ~ label {
+  top: -8px;
+  font-size: 0.78rem;
+  color: var(--gold);
+  font-weight: 600;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-bottom-color: #D4AF37;
-  box-shadow: 0 0 20px rgba(212,175,55,0.18);
+  border-bottom-color: var(--gold);
+  box-shadow: 0 2px 0 0 var(--gold);
 }
 
-.contact-submit {
-  padding: 14px 32px;
-  border-radius: 12px;
-  background: linear-gradient(135deg,#D4AF37,#e8c84a);
-  color: #000000;
-  font-weight: 700;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
+/* Focus underline glow animation */
+.form-group::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--gold);
+  transition: all var(--transition-fast);
+  transform: translateX(-50%);
+  box-shadow: 0 0 10px var(--gold-glow);
 }
 
-.contact-submit:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(212,175,55,0.18), 0 0 30px rgba(212,175,55,0.12);
-}
-
-/* Equal height layout helpers */
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 60px;
-  align-items: stretch;
-}
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 36px;
-  align-items: stretch;
-}
-
-.contact-form-wrapper,
-.contact-info-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-form-wrapper .contact-form {
-  flex: 1 1 auto;
-}
-
-.contact-info-wrapper .contact-info-item {
-  align-items: flex-start;
+.form-group:focus-within::after {
+  width: 100%;
 }
 
 /* Submit button shimmer */
@@ -2357,6 +2257,58 @@ section:first-of-type,
     transparent
   );
 }
+
+/* Certificate modal - hidden by default */
+.cert-modal {
+  display: none;
+}
+
+/* When active, center modal with overlay */
+.cert-modal.active {
+  display: flex;
+  position: fixed;
+  inset: 0;
+  align-items: center;
+  justify-content: center;
+  z-index: 1200;
+}
+
+.cert-modal .cert-modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.cert-modal .cert-modal-content {
+  position: relative;
+  z-index: 1201;
+  max-width: 920px;
+  width: calc(100% - 48px);
+  background: rgba(13,19,33,0.96);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.6), 0 0 30px rgba(212,175,55,0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cert-modal .cert-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+}
+
+/* Hide img element when src is empty to avoid visible alt/placeholder text */
+#cert-modal-img[src=""], #cert-modal-img:not([src]) {
+  display: none;
+}
+
 
 .footer-content {
   max-width: 600px;
