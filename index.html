@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Syeda Qurrath Ul Ain — Software Engineer specializing in AI-integrated applications, backend systems, and scalable full-stack development. Based in Bengaluru, India.">
+    <meta name="keywords" content="Software Engineer, AI Developer, Backend Developer, Full Stack Developer, Syeda Qurrath, Portfolio">
+    <meta name="author" content="Syeda Qurrath Ul Ain">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Syeda Qurrath Ul Ain — Software Engineer & AI Developer">
+    <meta property="og:description" content="Portfolio of Syeda Qurrath Ul Ain — Software Engineer specializing in AI-integrated applications, backend systems, and scalable full-stack development.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#0a0e1a">
+    <title>Syeda Qurrath Ul Ain — Software Engineer & AI Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo">SQ</div>
+            <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress" class="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="container nav-container">
+            <a href="#landing" class="nav-logo" aria-label="Home">SQ</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#landing" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#opensource" class="nav-link">Open Source</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════ -->
+    <!-- LANDING SECTION -->
+    <!-- ═══════════════════════════════════ -->
+    <section id="landing" class="section landing-section hero">
+        <div class="hero-particles" id="hero-particles"></div>
+        <div class="hero-gradient-orb hero-orb-1"></div>
+        <div class="hero-gradient-orb hero-orb-2"></div>
+        <div class="container hero-layout">
+            <div class="hero-copy">
+                <div class="hero-logo-wrapper reveal">
+                    <div class="hero-logo" aria-hidden="true">SQ</div>
+                </div>
+                <h1 class="hero-name reveal">Syeda Qurrath Ul Ain</h1>
+                <div class="hero-designation reveal">
+                    <div class="designation-rotator">
+                        <span class="designation-item active">Software Engineer</span>
+                        <span class="designation-item">AI & Backend Developer</span>
+                        <span class="designation-item">Open Source Contributor</span>
+                    </div>
+                </div>
+                <p class="hero-intro reveal">
+                    A results-driven Software Engineer specialising in AI-integrated applications, backend systems, and scalable full-stack development. With hands-on experience spanning computer vision, RESTful APIs, authentication workflows, and real-time platforms, I bring a strong engineering foundation backed by an MCA from Presidency University and a Distinction-grade BCA.
+                </p>
+                <div class="hero-buttons reveal">
+                    <a href="#about" class="btn btn-primary shimmer-btn">
+                        <span>Learn More About Me</span>
+                        <i class="fas fa-arrow-down"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="resume/Syeda_Qurrath_Resume.pdf" class="btn btn-tertiary" download>
+                        <span>Download Resume</span>
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+                <div class="hero-socials reveal">
+                    <a href="https://github.com/syedaqurrath" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/syeda-qurrath282" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:qurrath2809@gmail.com" aria-label="Email" class="social-icon">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="hero-achievement-badges reveal">
+                    <div class="achievement-badge">
+                        <span class="badge-value">4+</span>
+                        <span class="badge-label">Projects Built</span>
+                    </div>
+                    <div class="achievement-badge">
+                        <span class="badge-value">2+</span>
+                        <span class="badge-label">Certifications</span>
+                    </div>
+                    <div class="achievement-badge">
+                        <span class="badge-value">Open</span>
+                        <span class="badge-label">Source Contributor</span>
+                    </div>
+                    <div class="achievement-badge">
+                        <span class="badge-value">MCA</span>
+                        <span class="badge-label">Student</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════ -->
+    <!-- ABOUT SECTION -->
+    <!-- ═══════════════════════════════════ -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">About <span class="gold-text">Me</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-grid">
+                <!-- LEFT COLUMN: About Content -->
+                <div class="about-left-column">
+                    <div class="about-text reveal-left">
+                        <p>I am a Software Engineer based in Bengaluru, India, with expertise in building AI-powered applications, secure backend systems, and interactive full-stack platforms.</p>
+                        <p>My technical toolkit spans Python, JavaScript, Node.js, Express.js, React.js, MongoDB, OpenCV, MediaPipe, REST APIs, and modern development tools.</p>
+                        <p>I hold a Master of Computer Applications from Presidency University and a Bachelor of Computer Applications with Distinction from Bapuji Institute of Engineering &amp; Technology.</p>
+                        <p>As a recognised GSSoC contributor and Oracle-certified Generative AI professional, I am passionate about building software that is intelligent, scalable, and genuinely useful.</p>
+                    </div>
+                    <div class="about-cards about-values-grid reveal-stagger">
+                        <div class="about-card glass-card reveal">
+                            <div class="about-card-icon"><i class="fas fa-rocket"></i></div>
+                            <h3>Mission</h3>
+                            <p>To engineer intelligent, reliable software solutions that solve real-world problems by combining AI capabilities with strong backend architecture.</p>
+                        </div>
+                        <div class="about-card glass-card reveal">
+                            <div class="about-card-icon"><i class="fas fa-eye"></i></div>
+                            <h3>Vision</h3>
+                            <p>To become a world-class Full Stack AI Engineer building impactful products and contributing meaningfully to the open-source ecosystem.</p>
+                        </div>
+                        <div class="about-card glass-card reveal">
+                            <div class="about-card-icon"><i class="fas fa-handshake-angle"></i></div>
+                            <h3>Professional Values</h3>
+                            <ul class="values-list">
+                                <li>Continuous Learning</li>
+                                <li>Clean Engineering</li>
+                                <li>Scalability</li>
+                                <li>Open Source Contribution</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT COLUMN: Profile, Badges, and GitHub Summary -->
+                <aside class="about-right-column">
+                    <div class="about-image-frame reveal-right">
+                        <img src="profile picture/profile.jpg" alt="Syeda Qurrath Ul Ain — Software Engineer" class="about-image" loading="lazy">
+                        <div class="about-image-decoration"></div>
+                    </div>
+                    <div class="about-badges reveal">
+                        <span class="about-pill"><i class="fas fa-map-marker-alt"></i> Bengaluru, India</span>
+                        <span class="about-pill"><i class="fas fa-graduation-cap"></i> MCA — Presidency University</span>
+                        <span class="about-pill"><i class="fas fa-award"></i> Oracle GenAI Certified</span>
+                        <span class="about-pill"><i class="fas fa-code-branch"></i> Open Source Contributor</span>
+                    </div>
+                    <div id="github-summary" class="github-summary glass-card reveal">
+                        <h3 class="github-summary-title">GitHub Summary</h3>
+                        <div class="github-summary-grid">
+                            <div class="github-summary-item">
+                                <span id="gh-repos">—</span>
+                                <p>Public Repos</p>
+                            </div>
+                            <div class="github-summary-item">
+                                <span id="gh-contributions">Active</span>
+                                <p>Contribution Activity</p>
+                            </div>
+                            <div class="github-summary-item">
+                                <span id="gh-languages">—</span>
+                                <p>Top Languages</p>
+                            </div>
+                            <div class="github-summary-item">
+                                <span id="gh-opensource">3+</span>
+                                <p>Open Source Contributions</p>
+                            </div>
+                        </div>
+                        <div class="github-languages-breakdown" id="gh-lang-bars">
+                            <h4>Top Languages</h4>
+                            <div class="github-lang-bars" id="github-lang-bars-container"></div>
+                        </div>
+                        <a href="https://github.com/syedaqurrath" target="_blank" rel="noopener noreferrer" class="btn btn-secondary github-profile-button">
+                            <i class="fab fa-github"></i>
+                            View GitHub Profile
+                        </a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════ -->
+    <!-- EXPERIENCE SECTION -->
+    <!-- ═══════════════════════════════════ -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Work <span class="gold-text">Experience</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="timeline">
+                <!-- Experience 1 -->
+                <div class="timeline-item reveal-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div class="timeline-badge">Internship</div>
+                            <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Remote</span>
+                        </div>
+                        <h3 class="timeline-title">AI &amp; Data Science Intern</h3>
+                        <h4 class="timeline-company">Ozenfx</h4>
+                        <div class="timeline-details">
+                            <div class="timeline-group">
+                                <h5><i class="fas fa-tasks"></i> Responsibilities</h5>
+                                <ul>
+                                    <li>Data preprocessing and feature engineering</li>
+                                    <li>Exploratory data analysis using Python</li>
+                                    <li>Machine learning workflow implementation</li>
+                                    <li>Model evaluation support</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-group">
+                                <h5><i class="fas fa-trophy"></i> Achievements</h5>
+                                <ul>
+                                    <li>Delivered preprocessing pipelines for ML workflows</li>
+                                    <li>Applied machine learning concepts to real datasets</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Experience 2 -->
+                <div class="timeline-item reveal-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div class="timeline-badge">Open Source</div>
+                        </div>
+                        <h3 class="timeline-title">Open Source Contributor</h3>
+                        <h4 class="timeline-company">GirlScript Summer of Code (GSSoC)</h4>
+                        <div class="timeline-details">
+                            <div class="timeline-group">
+                                <h5><i class="fas fa-tasks"></i> Responsibilities</h5>
+                                <ul>
+                                    <li>Fixed frontend issues in React projects</li>
+                                    <li>Improved component usability</li>
+                                    <li>Used Git workflows and pull requests</li>
+                                    <li>Collaborated in Agile-style environments</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-group">
+                                <h5><i class="fas fa-trophy"></i> Achievements</h5>
+                                <ul>
+                                    <li>Earned GSSoC Contributor Recognition</li>
+                                    <li>Improved repository usability and stability</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════ -->
+    <!-- EDUCATION SECTION -->
+    <!-- ═══════════════════════════════════ -->
+    <section id="education" class="section education-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">My <span class="gold-text">Education</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="education-grid">
+                <!-- MCA -->
+                <div class="education-card glass-card reveal-left">
+                    <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3 class="education-degree">Master of Computer Applications</h3>
+                    <h4 class="education-school">Presidency University</h4>
+                    <div class="education-cgpa">
+                        <span class="cgpa-label">CGPA</span>
+                        <span class="cgpa-value">8.6 / 10</span>
+                    </div>
+                    <div class="education-highlights">
+                        <span class="edu-tag">Database Management Systems</span>
+                        <span class="edu-tag">Operating Systems</span>
+                        <span class="edu-tag">Software Engineering</span>
+                        <span class="edu-tag">SDLC</span>
+                        <span class="edu-tag">System Design</span>
+                    </div>
+                </div>
+                <!-- BCA -->
+                <div class="education-card glass-card reveal-right">
+                    <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="distinction-badge"><i class="fas fa-award"></i> Distinction</div>
+                    <h3 class="education-degree">Bachelor of Computer Applications</h3>
+                    <h4 class="education-school">Bapuji Institute of Engineering &amp; Technology</h4>
+                    <div class="education-cgpa">
+                        <span class="cgpa-label">CGPA</span>
+                        <span class="cgpa-value">8.9 / 10</span>
+                    </div>
+                    <div class="education-highlights">
+                        <span class="edu-tag">OOP</span>
+                        <span class="edu-tag">DBMS</span>
+                        <span class="edu-tag">Web Technologies</span>
+                        <span class="edu-tag">Problem Solving</span>
+                        <span class="edu-tag">Python</span>
+                        <span class="edu-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════ -->
+    <!-- PROJECTS SECTION -->
+    <!-- ═══════════════════════════════════ -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Featured <span class="gold-text">Projects</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="projects-grid reveal-stagger">
+                <!-- Project 1 -->
+                <div class="project-card glass-card reveal">
+                    <div class="project-card-accent"></div>
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-hand-sparkles"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/syedaqurrath/window_gesture" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub" class="project-link-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-type-badge">Computer Vision</div>
+                    <h3 class="project-title">Hand Gesture Recognition System</h3>
+                    <p class="project-desc">Real-time computer vision system enabling touchless desktop interaction through gesture recognition.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">OpenCV</span>
+                        <span class="tech-tag">MediaPipe</span>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card glass-card reveal">
+                    <div class="project-card-accent"></div>
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-shield-halved"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/syedaqurrath/REACT-Nodejs-MFA" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub" class="project-link-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Multi-Factor Authentication System</h3>
+                    <p class="project-desc">Production-grade authentication platform implementing JWT, OAuth, email verification, session management, and security dashboard.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">JWT</span>
+                        <span class="tech-tag">OAuth</span>
+                        <span class="tech-tag">bcrypt</span>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card glass-card reveal">
+                    <div class="project-card-accent"></div>
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-brain"></i></div>
+                        <div class="project-links"></div>
+                    </div>
+                    <h3 class="project-title">PrepAI</h3>
+                    <p class="project-desc">AI-assisted learning platform supporting personalised learning workflows and modular REST APIs.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card glass-card reveal">
+                    <div class="project-card-accent"></div>
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-map-location-dot"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/syedaqurrath/smart_tourist_assistant" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub" class="project-link-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Tourist Assistance Platform</h3>
+                    <p class="project-desc">Location-aware SPA with maps, voice interaction, authentication, and travel assistance features.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Supabase</span>
+                        <span class="tech-tag">React Leaflet</span>
+                        <span class="tech-tag">Web Speech API</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════ -->
+    <!-- OPEN SOURCE SECTION -->
+    <!-- ═══════════════════════════════════ -->
+    <section id="opensource" class="section opensource-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Open Source <span class="gold-text">Contributions</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="opensource-grid reveal-stagger">
+                <!-- Repo 1 -->
+                <div class="opensource-card glass-card reveal">
+                    <div class="opensource-card-header">
+                        <i class="fas fa-code-branch"></i>
+                        <h3>Aurleaf_GSSOC-25</h3>
+                    </div>
+                    <p class="opensource-desc">Contributed frontend enhancements, bug fixes, and usability improvements during GSSoC.</p>
+                    <div class="opensource-tech">
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Git</span>
+                        <span class="tech-tag">GitHub</span>
+                    </div>
+                </div>
+                <!-- Repo 2 -->
+                <div class="opensource-card glass-card reveal">
+                    <div class="opensource-card-header">
+                        <i class="fas fa-code-branch"></i>
+                        <h3>OSHub_GSSOC25</h3>
+                    </div>
+                    <p class="opensource-desc">Worked on issue resolution, code improvements, and collaborative development workflows.</p>
+                    <div class="opensource-tech">
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Git</span>
+                    </div>
+                </div>
+                <!-- Repo 3 -->
+                <div class="opensource-card glass-card reveal">
+                    <div class="opensource-card-header">
+                        <i class="fas fa-code-branch"></i>
+                        <h3>BizFlow_GSSOC</h3>
+                    </div>
+                    <p class="opensource-desc">Contributed to improving user experience, component functionality, and maintainability.</p>
+                    <div class="opensource-tech">
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">GitHub</span>
+                        <span class="tech-tag">Frontend Development</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════ -->
+    <!-- SKILLS SECTION -->
+    <!-- ═══════════════════════════════════ -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Technical <span class="gold-text">Skills</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-category glass-card reveal">
+                    <div class="skill-category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Python</span><span class="skill-percent">90%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" data-progress="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>JavaScript</span><span class="skill-percent">87%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" data-progress="87"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Java</span><span class="skill-percent">72%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" data-progress="72"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>SQL</span><span class="skill-percent">80%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" data-progress="80"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- AI & Computer Vision -->
+                <div class="skill-category glass-card reveal">
+                    <div class="skill-category-header">
+                        <i class="fas fa-robot"></i>
+                        <h3>AI &amp; Computer Vision</h3>
+                    </div>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>OpenCV</span><span class="skill-percent">85%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" data-progress="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>MediaPipe</span><span class="skill-percent">82%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" data-progress="82"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>ML Fundamentals</span><span class="skill-percent">78%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" data-progress="78"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Data Preprocessing</span><span class="skill-percent">83%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" data-progress="83"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Backend & APIs -->
+                <div class="skill-category glass-card reveal">
+                    <div class="skill-category-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend &amp; APIs</h3>
+                    </div>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Node.js &amp; Express.js</span><span class="skill-percent">88%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" data-progress="88"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>RESTful API Development</span><span class="skill-percent">90%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" data-progress="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>JWT / bcrypt / OAuth 2.0</span><span class="skill-percent">85%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" data-progress="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Passport.js</span><span class="skill-percent">78%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" data-progress="78"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Databases & Cloud -->
+                <div class="skill-category glass-card reveal">
+                    <div class="skill-category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Databases &amp; Cloud</h3>
+                    </div>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>MongoDB</span><span class="skill-percent">87%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" data-progress="87"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>PostgreSQL / MySQL</span><span class="skill-percent">80%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" data-progress="80"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Supabase</span><span class="skill-percent">78%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" data-progress="78"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Cloud Services</span><span class="skill-percent">75%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" data-progress="75"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Frontend & Web -->
+                <div class="skill-category glass-card reveal">
+                    <div class="skill-category-header">
+                        <i class="fas fa-palette"></i>
+                        <h3>Frontend &amp; Web Technologies</h3>
+                    </div>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>React.js</span><span class="skill-percent">85%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" data-progress="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Vite</span><span class="skill-percent">78%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" data-progress="78"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Web Speech API</span><span class="skill-percent">75%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" data-progress="75"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>React Leaflet</span><span class="skill-percent">76%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" data-progress="76"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Developer Tools -->
+                <div class="skill-category glass-card reveal">
+                    <div class="skill-category-header">
+                        <i class="fas fa-wrench"></i>
+                        <h3>Developer Tools &amp; Core CS</h3>
+                    </div>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Git &amp; GitHub</span><span class="skill-percent">90%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" data-progress="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Postman</span><span class="skill-percent">85%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" data-progress="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>OOP / DBMS / OS / SDLC</span><span class="skill-percent">88%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" data-progress="88"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Debugging &amp; Problem Solving</span><span class="skill-percent">90%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" data-progress="90"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════ -->
+    <!-- SERVICES SECTION -->
+    <!-- ═══════════════════════════════════ -->
+    <section id="services" class="section services-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Services <span class="gold-text">I Offer</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="services-grid reveal-stagger">
+                <div class="service-card glass-card reveal">
+                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Full Stack Web Development</h3>
+                    <p>End-to-end web application development using React, Node.js, Express, and MongoDB.</p>
+                </div>
+                <div class="service-card glass-card reveal">
+                    <div class="service-icon"><i class="fas fa-gears"></i></div>
+                    <h3>Backend API Development</h3>
+                    <p>Scalable REST APIs with authentication, authorization, validation, and database integration.</p>
+                </div>
+                <div class="service-card glass-card reveal">
+                    <div class="service-icon"><i class="fas fa-lock"></i></div>
+                    <h3>Authentication &amp; Security Systems</h3>
+                    <p>JWT authentication, OAuth integration, email verification, password encryption, and secure session management.</p>
+                </div>
+                <div class="service-card glass-card reveal">
+                    <div class="service-icon"><i class="fas fa-layer-group"></i></div>
+                    <h3>React Frontend Development</h3>
+                    <p>Responsive user interfaces with reusable components and modern design practices.</p>
+                </div>
+                <div class="service-card glass-card reveal">
+                    <div class="service-icon"><i class="fas fa-eye"></i></div>
+                    <h3>AI &amp; Computer Vision Applications</h3>
+                    <p>OpenCV, MediaPipe, machine learning workflows, and intelligent application development.</p>
+                </div>
+                <div class="service-card glass-card reveal">
+                    <div class="service-icon"><i class="fas fa-bug"></i></div>
+                    <h3>Bug Fixing &amp; Feature Development</h3>
+                    <p>Improve existing applications, fix issues, optimize performance, and add new functionality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════ -->
+    <!-- CERTIFICATIONS SECTION -->
+    <!-- ═══════════════════════════════════ -->
+    <section id="certifications" class="section certifications-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">My <span class="gold-text">Certifications</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="certifications-grid reveal-stagger">
+                <!-- Cert 1 -->
+                <div class="cert-card glass-card reveal">
+                    <div class="cert-image-wrapper">
+                        <img src="certificates/oracle_genai_professional.jpg" alt="Oracle Cloud Infrastructure 2025 Certified Generative AI Professional" class="cert-image" loading="lazy">
+                        <div class="cert-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-provider"><i class="fas fa-building"></i> Oracle University</div>
+                        <h3 class="cert-name">Oracle Cloud Infrastructure 2025 Certified Generative AI Professional</h3>
+                        <div class="cert-focus">
+                            <span class="cert-tag">Generative AI</span>
+                            <span class="cert-tag">Prompt Engineering</span>
+                            <span class="cert-tag">LLMs</span>
+                            <span class="cert-tag">OCI AI Services</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cert 2 -->
+                <div class="cert-card glass-card reveal">
+                    <div class="cert-image-wrapper">
+                        <img src="certificates/ozenfx_internship_certificate.jpg" alt="AI & Data Science Internship Certificate" class="cert-image" loading="lazy">
+                        <div class="cert-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-provider"><i class="fas fa-building"></i> Ozenfx</div>
+                        <h3 class="cert-name">AI &amp; Data Science Internship Certificate</h3>
+                        <div class="cert-focus">
+                            <span class="cert-tag">Machine Learning</span>
+                            <span class="cert-tag">Data Analysis</span>
+                            <span class="cert-tag">Feature Engineering</span>
+                            <span class="cert-tag">Data Preprocessing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════ -->
+    <!-- ACHIEVEMENTS SECTION -->
+    <!-- ═══════════════════════════════════ -->
+    <section id="achievements" class="section achievements-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Achievements &amp; <span class="gold-text">Recognition</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">A record of consistent excellence in academia, engineering, and community contribution.</p>
+            </div>
+            <!-- Animated Counters -->
+            <div class="counters-grid reveal">
+                <div class="counter-item">
+                    <div class="counter-number"><span class="counter" data-target="1" data-suffix="+">0</span>+</div>
+                    <div class="counter-label">Years Experience</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-number"><span class="counter" data-target="2" data-suffix="+">0</span>+</div>
+                    <div class="counter-label">Certifications</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-number"><span class="counter" data-target="4" data-suffix="">0</span></div>
+                    <div class="counter-label">Projects</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-number"><span class="counter" data-target="1" data-suffix="">0</span></div>
+                    <div class="counter-label">Recognition Award</div>
+                </div>
+            </div>
+            <!-- Achievement Cards -->
+            <div class="achievements-grid reveal-stagger">
+                <div class="achievement-card glass-card reveal">
+                    <div class="achievement-header">
+                        <span class="achievement-category professional">Professional</span>
+                        <span class="achievement-year">2025</span>
+                    </div>
+                    <h3 class="achievement-title">GSSoC Contributor Recognition</h3>
+                    <h4 class="achievement-institution"><i class="fas fa-building-columns"></i> GirlScript Summer of Code</h4>
+                    <p class="achievement-desc">Recognised for consistent high-quality open-source contributions, issue resolution, component improvements, and collaborative software development.</p>
+                </div>
+                <div class="achievement-card glass-card reveal">
+                    <div class="achievement-header">
+                        <span class="achievement-category academic">Academic</span>
+                        <span class="achievement-year">2024</span>
+                    </div>
+                    <h3 class="achievement-title">BCA with Distinction</h3>
+                    <h4 class="achievement-institution"><i class="fas fa-building-columns"></i> Bapuji Institute of Engineering &amp; Technology</h4>
+                    <p class="achievement-desc">Graduated with Distinction and a CGPA of 8.9 / 10.0, demonstrating strong academic performance across programming, software engineering, databases, and computer science fundamentals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════ -->
+    <!-- CONTACT SECTION -->
+    <!-- ═══════════════════════════════════ -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Let's Build <span class="gold-text">Something Together</span></h2>
+                <div class="section-divider"></div>
+                <p class="contact-intro">Interested in working together? Let's discuss your next project and build intelligent systems with strong backend architecture.</p>
+                <div class="contact-hero-buttons">
+                    <a href="mailto:qurrath2809@gmail.com" class="btn btn-primary shimmer-btn">
+                        <i class="fas fa-briefcase"></i>
+                        Hire Me
+                    </a>
+                    <a href="resume/Syeda_Qurrath_Resume.pdf" class="btn btn-secondary" download>
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper reveal-left">
+                    <form id="contact-form" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <input type="text" id="contact-name" name="name" required autocomplete="name">
+                            <label for="contact-name" class="floating-label">Full Name</label>
+                            <div class="form-underline"></div>
+                            <span class="form-error" id="name-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="contact-email" name="email" required autocomplete="email">
+                            <label for="contact-email" class="floating-label">Email Address</label>
+                            <div class="form-underline"></div>
+                            <span class="form-error" id="email-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="contact-subject" name="subject" required>
+                            <label for="contact-subject" class="floating-label">Subject</label>
+                            <div class="form-underline"></div>
+                            <span class="form-error" id="subject-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="contact-message" name="message" rows="5" required></textarea>
+                            <label for="contact-message" class="floating-label">Message</label>
+                            <div class="form-underline"></div>
+                            <span class="form-error" id="message-error"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary shimmer-btn contact-submit">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                        <div class="form-success" id="form-success">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Message sent successfully!</span>
+                        </div>
+                    </form>
+                </div>
+                <!-- Contact Info -->
+                <div class="contact-info-wrapper reveal-right">
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-info-content">
+                            <h4>Email</h4>
+                            <a href="mailto:qurrath2809@gmail.com">qurrath2809@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact-info-content">
+                            <h4>Phone</h4>
+                            <a href="tel:+919741940080">+91 9741940080</a>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i class="fas fa-location-dot"></i></div>
+                        <div class="contact-info-content">
+                            <h4>Location</h4>
+                            <span>Bengaluru, India</span>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i class="fab fa-linkedin-in"></i></div>
+                        <div class="contact-info-content">
+                            <h4>LinkedIn</h4>
+                            <a href="https://linkedin.com/in/syeda-qurrath282" target="_blank" rel="noopener noreferrer">syeda-qurrath282</a>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i class="fab fa-github"></i></div>
+                        <div class="contact-info-content">
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/syedaqurrath" target="_blank" rel="noopener noreferrer">syedaqurrath</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════ -->
+    <!-- FOOTER -->
+    <!-- ═══════════════════════════════════ -->
+    <footer class="footer">
+        <div class="footer-accent"></div>
+        <div class="container footer-content">
+            <div class="footer-logo">SQ</div>
+            <h3 class="footer-name">Syeda Qurrath Ul Ain</h3>
+            <p class="footer-tagline">Engineering intelligent systems, one commit at a time.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/syedaqurrath" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/syeda-qurrath282" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:qurrath2809@gmail.com" aria-label="Email" class="social-icon"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="footer-divider"></div>
+            <p class="footer-copyright">&copy; 2025 Syeda Qurrath Ul Ain. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Certificate Modal -->
+    <div id="cert-modal" class="cert-modal" role="dialog" aria-modal="true" aria-label="Certificate preview">
+        <div class="cert-modal-overlay"></div>
+        <div class="cert-modal-content">
+            <button class="cert-modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+            <img id="cert-modal-img" src="" alt="Certificate preview">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
